@@ -9,12 +9,16 @@
     <title>Kasheshe</title>
 </head>
 <body class="font-helv">
-    <nav>
+    <!-- navigation bar -->
+    <nav class="absolute right-0 left-0 z-10 text-white">
         <div class="w-9/12 mx-auto py-5 flex justify-between items-center">
             <div class="w-1/2">
                 <a class="text-2xl font-bold" href="#">Kasheshe</a>
             </div>
-            <button class="flex py-2 px-4 rounded-md border border-blue-400 bg-transparent hover:bg-blue-400 hover:text-white ">Search</button>
+            <div>
+                <button class="flex py-2 px-4 rounded-md border border-blue-400 bg-transparent hover:bg-blue-400 hover:text-white ">Search</button>
+            </div>
+            
             <div>
                 <button class="btn">Twitter</button>
                 <button class="btn">Facebook</button>
@@ -22,7 +26,7 @@
             
         </div>
     </nav>
-    
+    <!-- hero banner -->
     <div class="relative h-screen">
         <img src="src/background/img-14.jpg" alt="hero image" class="h-full w-full object-cover">
         <div class="absolute inset-0 bg-black/50"></div>
@@ -35,10 +39,13 @@
                     </div>
                     <div>
                         <input type="text" placeholder="Search for keyword" class="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline-none">
-                        <button class="rounded-md py-3 px-3 bg-blue-400 text-lg text-white hover:bg-white hover:text-blue-400">Search</button>
+                        <button class="rounded-md py-3 px-3 bg-blue-400 text-lg text-white hover:bg-white hover:text-blue-400">
+                            Search
+                            <i class="fa fa-search ml-2" aria-hidden="true"></i>
+                        </button>
                     </div>
                     <div>
-                        <ul class="">
+                        <ul class="capitalize flex justify-center gap-5 mt-4">
                             <li class=" hover:text-blue-400">
                                 <a href="#">
                                     <span><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
@@ -71,6 +78,16 @@
             </div>
         </div>
         
+    </div>
+    <!-- main content -->
+    <div class="bg-gray-50 py-10">
+        <div class="w-9/12 mx-auto">
+            <div class="text-left mb-12">
+                <p class="text-2xl font-semibold text-gray-700 ">Popular Posts</p>
+                <p>Discover the most popular posts</p>
+            </div>
+        </div>
+
     </div>
     <script src="script.js"></script>
 </body>
