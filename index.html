@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Kasheshe</title>
 </head>
 <body class="font-helv">
@@ -13,19 +14,64 @@
             <div class="w-1/2">
                 <a class="text-2xl font-bold" href="#">Kasheshe</a>
             </div>
-            <button class="flex py-2 px-4 rounded-md border border-amber-400 bg-transparent hover:bg-amber-400 hover:text-white ">Search</button>
+            <button class="flex py-2 px-4 rounded-md border border-blue-400 bg-transparent hover:bg-blue-400 hover:text-white ">Search</button>
             <div>
-                <button class="text-sm mx-4 border p-2 text-amber-400 hover:bg-amber-300 hover:text-white rounded-lg border-amber-300">Twitter</button>
-                <button class="text-sm mx-4 border p-2 text-amber-400 hover:bg-amber-300 hover:text-white rounded-lg border-amber-300">Facebook</button>
+                <button class="btn">Twitter</button>
+                <button class="btn">Facebook</button>
             </div>
             
         </div>
     </nav>
     
-    <div>
-        <img src="" alt="">
-        <div></div>
-        <div></div>
+    <div class="relative h-screen">
+        <img src="src/background/img-14.jpg" alt="hero image" class="h-full w-full object-cover">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="absolute w-full h-full inset-0">
+            <div class="flex min-h-full w-full items-center justify-center gap-4">
+                <div class="text-white text-center">
+                    <div>
+                        <p class="text-3xl capitalize font-bold mb-4">Stories we love to hear</p>
+                        <p class="text-lg mb-3 font-extralight">All right here</p>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Search for keyword" class="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline-none">
+                        <button class="rounded-md py-3 px-3 bg-blue-400 text-lg text-white hover:bg-white hover:text-blue-400">Search</button>
+                    </div>
+                    <div>
+                        <ul class="">
+                            <li class=" hover:text-blue-400">
+                                <a href="#">
+                                    <span><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+                                    Showbiz
+                                </a>
+                            </li>
+                            <li class="hover:text-blue-400">
+                                <a href="#">
+                                    <span><i class="fa fa-globe" aria-hidden="true"></i></span>
+                                    World News
+                                </a>
+                            </li>
+                            <li class="hover:text-blue-400">
+                                <a href="#">
+                                    <span class=""><i class="fa fa-music" aria-hidden="true"></i></span>
+                                    Music
+                                </a>
+                            </li>
+                            
+                            <li class="hover:text-blue-400">
+                                <a href="#">
+                                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                                    Life
+                                </a> 
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
